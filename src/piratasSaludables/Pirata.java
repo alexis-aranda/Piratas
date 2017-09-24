@@ -17,6 +17,7 @@ public class Pirata {
 		this.estado=this.estado.beberGrog();
 	}
 	public void atacar(Pirata that){
+		//this.puntos+=this.estado.pelea(that.estado);
 		if(this.estado.atacar()>that.estado.defender())
 			this.puntos+=this.estado.atacar()-that.estado.defender();
 	}
